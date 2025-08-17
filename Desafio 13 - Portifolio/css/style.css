@@ -1,62 +1,239 @@
-html{
+html {
     scroll-behavior: smooth;
+
 }
 
 
-:root{
-    --brand-color:#040672;
-    --second-color:#044a72;
+:root {
+    --brand-color: #5154fa;
+    --second-color: #044a72;
 
     --dark-10: #222;
-    --dark-20:#292828;
-    --gray:#e4e1e1;
-    --white:#fff;
+    --dark-20: #1d1c1c;
+    --gray: rgba(250, 249, 249, 0.2);
+    --white: #fff;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    color: var(--white);
 }
 
-header{
+body {
+    overflow-x: hidden;
+    background-color: var(--dark-20);
+}
+
+header {
     width: 100%;
     height: 5.5rem;
 
     position: fixed;
-    z-index: inherit;
+    z-index: 2;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: var(--dark-20);
-    border-bottom: 1px solid var(--gray);
-    border-bottom-width: 80%;
+    background-color: var(--dark-10);
+
 }
 
-.conteudo-header{
+.conteudo-header {
     width: 80%;
+    height: 100%;
+
+    padding: 2.5rem;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    font-family: 'Inter', sans-serif;
+
+    border-bottom: 1px solid var(--gray);
+    border-bottom-width: 80% blur(5);
 
 }
 
-.conteudo-header ul{
+.conteudo-header h2 {
+    color: var(--brand-color);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+}
+
+.conteudo-header ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2.5rem;
+
+    padding: 5.5rem;
 }
 
-main{
+.conteudo-header ul li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+main {
     width: 100%;
     height: 100vh;
 
     background-color: var(--dark-10);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.content-main {
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.apresentation {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.apresentation span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.apresentation h1 {
+    font-size: 3.5rem;
+    color: var(--brand-color)
+}
+
+.apresentation h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+}
+
+.btn-apresentation {
+    font-family: 'Poppins', sans-serif;
+    width: 145px;
+    height: 40px;
+
+    background-color: var(--brand-color);
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+
+.img {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-background {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: var(--brand-color);
+    opacity: 10;
+    filter: blur(350px);
+}
+
+.sobre{
+    width: 100%;
+
+    padding: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .content-sobre{
+    width: 70%;
+
+    font-family: 'Poppins',sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sobre .content-sobre h1{
+    font-family: 'Space Grotesk',sans-serif;
+    color: var(--brand-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.sobre .content-sobre h5{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.sobre .content-sobre p{
+    line-height: 1.5rem;
+}
+
+.redes-sociais ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icons-rs img{
+    color: var(--brand-color);
+}
+
+.btn-sobre{
+    font-family: 'Poppins', sans-serif;
+    width: 145px;
+    height: 40px;
+
+    background-color: var(--brand-color);
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+
+.meus-projetos{
+    width: 100%;
+    padding: 80px;
+
+    background-color: var(--dark-10);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content-projects{
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-projects h1{
+    font-family: 'Space Grotesk',sans-serif;
+    color: var(--brand-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.projects{
     display: flex;
     align-items: center;
     justify-content: center;
