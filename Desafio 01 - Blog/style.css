@@ -1,0 +1,125 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --brand-color: #e07b67;
+
+  --dark-10: #121214;
+  --dark-20: #17171a;
+  --dark-30: #202024;
+  --dark-40: #252529;
+
+  --gray: #afabb6;
+  --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+header{
+    background-color: var(--dark-20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 64px ;
+    gap: 48px;
+
+}
+
+span{
+    color: var(--brand-color);
+}
+
+form{
+    width: 60%;
+    max-width: 100%;
+    height: 56px;
+    
+}
+
+input{
+    background-color: var(--dark-40);
+    width: 100%;
+    height: 56px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    font-size: 18px;
+}
+
+main{
+    background-color: var(--dark-10);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 60%;
+    height: 100%;
+
+    padding-block: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card{
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 40px;
+    gap: 20px;
+}
+
+.card:hover{
+    border: 1px solid var(--brand-color);
+    transition: 0.6 ms; 
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon h6{
+    color: var(--brand-color);
+}
+
+.material-symbols-outlined{
+    fill: none;
+    transition: 0.6 ms; 
+}
+
+.material-symbols-outlined:hover{
+    fill: var(--brand-color);
+    transition: 0.6 ms; 
+}
+
+.text-card{
+    padding: 20px 0px;
+}
+
+.text-card h2{
+    margin-bottom: 10px;
+}
