@@ -144,7 +144,6 @@ span,h1,h2{
 }
 
 .section-cardapio{
-    border: 1px solid red;
     padding: 80px;
     display: flex;
     flex-direction: column;
@@ -153,9 +152,9 @@ span,h1,h2{
     gap: 200px;
 }
 
-.title{
-    font-weight: 300;
-    font-size: 2rem;
+.title h1{
+    font-weight: 400;
+    font-size: 2.3rem;
 }
 
 .cardapio{
@@ -202,5 +201,47 @@ span,h1,h2{
 .img-prato{
     position: absolute;
     top: -114px;
+}
+
+.section-coment{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-coment h1{
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.comentarios{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.card{
+    width: 592px;
+    height: 390px;
+    padding: 30px;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    border-radius: 25px;
+
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 10,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
