@@ -169,7 +169,7 @@ main{
 
 /*Responsividade*/
 
-@media (max-width :1200px){
+@media (max-width :1280px){
 
     body{
         width: 100%;
@@ -181,9 +181,17 @@ main{
     .content{
         flex-direction: column;
     }
+    
 
 
     .ilustration{
+        background-size: cover;
+        width: 527px;
+        margin: auto;
+        margin-bottom: 50px;
+
+        background-repeat: no-repeat;
+
         height: 424px;
         order: 1;
     }
@@ -228,6 +236,17 @@ main{
         height: 100%;
     }
 
+    .ilustration{
+        background-size: cover;
+        max-width: 327px;
+        max-height: 240px;
+
+        background-repeat: no-repeat;
+
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
 }
 
 @media (max-width :500px){
@@ -243,6 +262,8 @@ main{
 
 @media (max-width :390px){
     header{
+        align-items: center;
+        justify-content: center;
         height: 96px;
     }
 
@@ -254,7 +275,17 @@ main{
         display: none;
     }
 
-    .ilustration{
-        height: 180px;
+    .description{
+        margin-top: 30px;
     }
+
+    .ilustration{
+        background-size: cover;
+        max-width: 250px;
+        max-height: 180px;
+        margin: auto;
+
+        background-repeat: no-repeat;
+    }
+
 }
