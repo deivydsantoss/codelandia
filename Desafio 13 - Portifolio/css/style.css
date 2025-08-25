@@ -22,6 +22,12 @@ html {
     color: var(--white);
 }
 
+.container{
+    width: 70%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 body {
     overflow-x: hidden;
     background-color: var(--dark-20);
@@ -54,7 +60,6 @@ header {
 }
 
 .conteudo-header {
-    width: 80%;
     height: 100%;
 
     padding: 2.5rem;
@@ -89,6 +94,10 @@ header {
     text-decoration: none;
 }
 
+.conteudo-header span{
+    display: none;
+}
+
 main {
     width: 100%;
     height: 100vh;
@@ -103,12 +112,11 @@ main {
 }
 
 .content-main {
-    width: 70%;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding-block: 50px;
 }
 
 .apresentation {
@@ -164,7 +172,7 @@ main {
 .sobre{
     width: 100%;
 
-    padding: 80px;
+    padding-block: 80px;
 
     display: flex;
     align-items: center;
@@ -172,7 +180,6 @@ main {
 }
 
 .sobre .content-sobre{
-    width: 70%;
 
     font-family: 'Poppins',sans-serif;
 
@@ -203,9 +210,6 @@ main {
     gap: 1.5rem;
 }
 
-.icons-rs img{
-    color: var(--brand-color);
-}
 
 .btn-sobre{
     font-family: 'Poppins', sans-serif;
@@ -219,7 +223,7 @@ main {
 
 .meus-projetos{
     width: 100%;
-    padding: 80px;
+    padding-block: 80px;
 
     background-color: var(--dark-10);
 
@@ -325,4 +329,95 @@ footer{
     color: var(--dark-10);
     border-color: var(--brand-color);
     cursor: pointer;
+}
+
+@media (max-width:1200px){
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-img{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+    header{
+        height: 100%;
+        position: inherit;
+    }
+    .conteudo-header{
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu ul{
+        display: none;
+    }
+
+    .conteudo-header span{
+        display: block;
+    }
+
+
+    .content-main{
+        flex-direction: column;
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:375px){
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .conteudo-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-menu ul{
+        display: none;
+    }
+
+    main{
+        height: 100%;
+    }
+
+    .img .me{
+        width: 350px;
+        height: 350px;
+    }
+
+    .content-footer{
+        padding-block: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
