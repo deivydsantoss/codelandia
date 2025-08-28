@@ -1,0 +1,8 @@
+:root{
+    --brand-color: #8958FF;
+    --secondary:#000014;
+}
+
+h1,p {
+    color: var(--brand-color);
+}
