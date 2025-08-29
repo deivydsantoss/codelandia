@@ -1,0 +1,39 @@
+:root{
+    --brand-color: #8958FF;
+    --brand-paper:#FFE3BD;
+    --dark-10:#000014;
+    --white:#f1f1f1;
+    --gray: #f1f1f150
+}
+
+
+body{
+    background-color: var(--dark-10);
+    color: var(--white);
+}
+
+.title{
+    font-size: 108px;
+    -webkit-text-stroke-width: 1px;  /* largura da borda */
+    -webkit-text-stroke-color: var(--brand-color); /* cor da borda */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    width: 100%;
+    max-width: 864px;
+    flex-wrap: wrap;
+
+    display: grid;
+}
+
+.card{
+    height: 176px;
+    width: 176px;
+}
